@@ -1,6 +1,6 @@
 import "./HeaderComponent.css";
 
-function HeaderComponent() {
+function HeaderComponent(props) {
   return (
     <form className="formulario">
       <label>
@@ -15,6 +15,9 @@ function HeaderComponent() {
         <div>Date</div>
         <input type="date" name="date"></input>
       </label>
+      <button className="botaoAdicionar" onClick={props.inserirNovoDados}>
+        Adicionar Valor!
+      </button>
     </form>
   );
 }

@@ -9,10 +9,15 @@ html {
   height: 100px;
 }
 
-.resultadoParte {
-  height: 100px;
-  width: 80%;
-  background-color: red;
-  text-align: center;
-  margin: 1rem auto;
+.textFilter {
+  font-weight: 800;
+  font-size: 3rem;
+  margin: auto auto;
+}
+
+.secaoOpcoes {
+  height: 50px;
+  margin: auto auto;
+  border: none;
+  border-radius: 1rem;
 }

@@ -20,3 +20,13 @@ label {
   font-weight: 700;
   font-size: 2rem;
 }
+
+.botaoAdicionar {
+  height: 100px;
+  width: 100px;
+  margin-top: 1rem;
+  margin-left: 20rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px #000;
+}

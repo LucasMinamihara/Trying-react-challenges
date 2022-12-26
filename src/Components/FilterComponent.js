@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./FilterComponent.css";
+import FilterDados from "./FilterDados";
 
-function FilterComponent() {
+function FilterComponent(props) {
   const [valor, mudandoValor] = useState("2022");
   const [exibicao, mudandoExibicao] = useState("Aqui aparecerá o resultado!");
   const valoresAno = [
@@ -27,15 +28,23 @@ function FilterComponent() {
   return (
     <>
       <div className="filterSecao">
-        <div>Filter by Year</div>
-        <select value={valor} onChange={mudandoResultado}>
+        <div className="textFilter">Filter by Year</div>
+        <select
+          value={valor}
+          onChange={mudandoResultado}
+          className="secaoOpcoes"
+        >
           <option value="2022">2022</option>
           <option value="2021">2021</option>
           <option value="2020">2020</option>
           <option value="2019">2019</option>
         </select>
       </div>
-      <div className="resultadoParte">{exibicao}</div>
+      {/* <div className="resultadoParte">{exibicao}</div> */}
+      {props.valores.map((e) => {
+        // display values from object!
+        <FilterDados></FilterDados>;
+      })}
     </>
   );
 }

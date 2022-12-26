@@ -1,0 +1,22 @@
+html {
+  font-size: 10px;
+}
+
+.formulario {
+  background-color: rgb(169, 96, 238);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+  margin: 2rem 1rem;
+  padding: 10rem;
+}
+input {
+  padding: 1rem;
+  width: 400px;
+  border-radius: 0.5rem;
+  border: none;
+}
+label {
+  font-weight: 700;
+  font-size: 2rem;
+}

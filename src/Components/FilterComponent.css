@@ -1,0 +1,18 @@
+html {
+  font-size: 10px;
+}
+
+.filterSecao {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(173, 173, 173);
+  height: 100px;
+}
+
+.resultadoParte {
+  height: 100px;
+  width: 80%;
+  background-color: red;
+  text-align: center;
+  margin: 1rem auto;
+}
